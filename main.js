@@ -22,7 +22,6 @@ function displayBookOnPage(){
         bookCard.classList.add('bookCard');
         books.appendChild(bookCard)
         for(let key in displayBook){
-            console.log(`${key}: ${myLibrary[key]}`)
             const para = document.createElement('p')
             para.textContent = (`${key}: ${displayBook[key]}`)
             bookCard.appendChild(para)
@@ -31,7 +30,7 @@ function displayBookOnPage(){
 }
 
 addBookToLibrary("The Hobbit", "J.R.R. Tolkien", "295 pages", "not read yet");
-
+addBookToLibrary("Captain Underpants", "Dav Pilkey", "100 pages", "Read");
 addBookToLibrary("Captain Underpants", "Dav Pilkey", "100 pages", "Read");
 
 displayBookOnPage();
