@@ -20,25 +20,76 @@
    display: grid;
 }
 .button{
-    padding: 11px 25px;
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #F8EDE3;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 7px #999; 
-    color: #666;
-    position: relative;
-    top: 150px;
-    left: 100px;
+   padding: 11px 25px;
+   font-size: 20px;
+   text-align: center;
+   cursor: pointer;
+   outline: none;
+   color: #fff;
+   background-color: #F8EDE3;
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 7px #999; 
+   color: #666;
+   position: relative;
+   top: 19px;
+   left: 670px;
 }
-.button:hover {background-color: #DFD3C3}
+.button:hover {
+    background-color: #DFD3C3
+}
 
 .button:active {
-  background-color: #F8EDE3;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+    background-color: #F8EDE3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
+.form{
+    display: none;
+    position: relative;
+    left: 600px;
+    bottom: 500px;
+}
+
+.form-container{
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+} 
+ .form-container input[type = text], .form-container input[type = number], .form-container input[type = radio]{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px 30px 0.1px;
+    border: none;
+    background: #f1f1f1;
+}
+.form-container input[type = text]:focus, .form-container input[type = number]:focus, .form-container input[type = radio]:focus{
+  background-color: #ddd;
+  outline: none;
+
+}
+.form-container .btn{
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;  
+}
+.form-container .btn-close {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+} 
+  

@@ -28,6 +28,15 @@ function displayBookOnPage(){
         }
     })
 }
+function openForm(){
+    document.getElementById("myForm").style.display = "block";
+}
+function closeForm(){
+    document.getElementById("myForm").style.display = 'none';
+
+}
+
+
 
 addBookToLibrary("The Hobbit", "J.R.R. Tolkien", "295 pages", "not read yet");
 addBookToLibrary("Captain Underpants", "Dav Pilkey", "100 pages", "Read");
